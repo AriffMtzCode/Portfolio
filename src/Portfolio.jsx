@@ -1,10 +1,10 @@
-import React from 'react'
+import { AppRouter } from './router/AppRouter'
 import { Navbar } from './ui/Navbar'
-
 export const Portfolio = () => {
   return (
-    <div>
+    <div className='font-Poppins bg-bg-page h-screen'>
       <Navbar />
+      <AppRouter />
     </div>
   )
 }
