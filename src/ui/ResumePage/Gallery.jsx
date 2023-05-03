@@ -103,16 +103,15 @@ const certifications = [
 
 export const Gallery = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-8">
+    <div className="flex mt-8 relative">
       {certifications.map(
         ({ nameCertification, finishDate, organization, icon, image }) => (
           <div
             key={nameCertification}
-            className="text-text-color h-full flex justify-center items-center border-2 border-box-border rounded-lg w-[80%] mb-4"
+            className="text-text-color w-[200px] h-[200px] flex justify-start  border-2 border-box-border rounded-lg  mb-4 m-4"
           >
-            <div className="w-[120px] h-[120px] border-r-2 rounded-r-none rounded-lg border-box-border bg-bg-box flex items-center justify-center">
+            <div className="w-[100px] h-[200px] border-r-2 rounded-r-none rounded-lg border-box-border bg-bg-box flex items-center justify-center">
               {icon}
-              <img src={image} />
             </div>
             <div className="w-full h-full flex flex-col justify-center ml-4">
               <p className="text-sm text-white">{nameCertification}</p>
