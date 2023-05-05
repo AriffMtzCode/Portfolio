@@ -1,9 +1,9 @@
+import { Footer } from "../ui/Footer";
 import { Header } from "../ui/Header";
-import { Gallery } from "../ui/ResumePage/Gallery";
 
 export const ResumePage = () => {
   return (
-    <div className="">
+    <div className="w-full">
       <Header text="Resumen" />
       <section className="h-auto bg-bg-page">
         <p className="text-white text-xl font-semibold ml-8 mt-8">Educación</p>
@@ -104,7 +104,7 @@ export const ResumePage = () => {
               </p>
             </div>
           </div>
-          <div className="w-72 border-l border-bg-box h-52">
+          <div className="w-72 border-l border-bg-box h-52 mb-8">
             <div className="flex items-center mt-2">
               <p className="border-2 border-primary-color rounded-2xl w-12 p-1 text-xs text-center text-text-color mr-2 ml-[-0.5rem] bg-bg-footer">
                 2021
@@ -122,13 +122,7 @@ export const ResumePage = () => {
           </div>
         </div>
       </section>
-      <section className="h-auto bg-bg-page ">
-      <p className="text-white text-xl font-semibold ml-8">Certificados</p>
-        <hr className="w-10 border border-primary-color ml-8" />
-        <div>
-          <Gallery />
-        </div>
-      </section>
+      <Footer />
     </div>
   );
 };
