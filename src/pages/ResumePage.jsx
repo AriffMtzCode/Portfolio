@@ -1,5 +1,6 @@
 import { Footer } from "../ui/Footer";
 import { Header } from "../ui/Header";
+import { SliderCrt } from "../ui/ResumePage/SliderCrt";
 
 export const ResumePage = () => {
   return (
@@ -121,6 +122,9 @@ export const ResumePage = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="bg-bg-page">
+        <SliderCrt />
       </section>
       <Footer />
     </div>
