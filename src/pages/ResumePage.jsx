@@ -124,6 +124,8 @@ export const ResumePage = () => {
         </div>
       </section>
       <section className="bg-bg-page">
+      <p className="text-white text-xl font-semibold ml-8">Certifications</p>
+        <hr className="w-10 border border-primary-color ml-8 mb-8" />
         <SliderCrt />
       </section>
       <Footer />

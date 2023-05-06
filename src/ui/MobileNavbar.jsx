@@ -19,7 +19,7 @@ export const MobileNavbar = () => {
             {/* Cambio entre iconos */}
             { !nav? <HiMenuAlt3 size={25}/> : <HiOutlineX size={25}/>}
       </div>
-      <div className={nav ? "bg-bg-page w-[60%] h-screen fixed right-0 top-[54px] shadow-lg shadow-black/100 transition ease-in-out duration-500 z-50": 'fixed right-[-100%]'}>
+      <div className={nav ? "bg-bg-page w-[60%] h-screen fixed right-0 top-[54px] shadow-lg shadow-black/100 transition duration-500 ease-in-out z-50": 'fixed right-[-100%] opacity-20'}>
         <div className="flex flex-col items-start mt-4 text-medium-text text-md "> 
               <NavLink className='mt-4 ml-10' to='/'>Sobre mi</NavLink>
               <NavLink className='mt-4 ml-10' to='resume'>Resumen</NavLink>
